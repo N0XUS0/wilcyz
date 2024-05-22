@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
+    position: relative !important;
   }
   
   .logo {
@@ -1540,7 +1541,7 @@
 #perloder{
   background:#ffffff url(img/تصميم\ بدون\ عنوان.gif) no-repeat center !important;
     background-size: 44rem !important;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     z-index: 100;
