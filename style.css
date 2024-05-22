@@ -1577,3 +1577,25 @@ section {
   margin-bottom: 40px;
 }
   
+.reveal{
+  
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+.spacer {
+  height: 50vh;
+  background-color: #000;
+}

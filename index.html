@@ -16,9 +16,9 @@
 <body>
   <div id="perloder">
   </div>
- <!--  <div style="display: none;"> 
+  <div style="display: none;"> 
   </div>
-   -->
+  
    <div class="navagation">
    <nav>
     <input type="checkbox" id="check">
@@ -53,12 +53,12 @@
         </div>
 
     </div>
-   <img src="img/imgg.png" alt="" style="height: 250px;">
-    
+        <img src="img/imgg.png" alt="" style="height: 250px;">
+  
 </div>
 
-<div class="vidx " style="margin-top: 20px; border-radius: 20px ; padding: 10px; border-radius:20px;filter: drop-shadow(10px 7px 5px #585753);">
- <center> <video width="80%" height="auto"  controls autoplay >
+<div class="">
+ <center> <video width="80%" height="auto" controls autoplay >
     <source src="img/offer.mp4" type="video/mp4">
   </video></center>
 </div>
@@ -69,7 +69,7 @@
     <br>
 </center>
 </div>
-  
+<div class="reveal">
 <div class="embedet">
   <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%;
   padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
@@ -80,12 +80,12 @@
  </div>
  <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGF7_aRXBw&#x2F;bK0s880oVhUN8t3KU9ptsQ&#x2F;view?utm_content=DAGF7_aRXBw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
  </div>
- 
- <div style="text-align: center; font-size: 20px; background-color: #e63225; padding: 10px; border-radius:20px; ">
+</div>
+<div class="reveal"> <div style="text-align: center; font-size: 20px; background-color: #e63225; padding: 10px; border-radius:20px; ">
   <i class="fa-solid fa-download fa-bounce" style="color: #Fff; padding-right: 10px;"></i>
 <a href="" style="color: #fff;">تحميل المينيو</a>
  </div>
- 
+ </div>
   <div class="container">
 
      <section class="customer-logos slider">
@@ -129,8 +129,7 @@
 </center>
 </div>
 
-
-
+<div class="reveal">
  <div class="embedet">
   <div style="position: relative; width: 100%; height: 100px; padding-top: 141.8919%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
@@ -141,7 +140,7 @@
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF9v072kfM&#x2F;7OSQ0xxPVPENZZ_SHHroQg&#x2F;view?utm_content=DAF9v072kfM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
  </div>
-
+</div>
 <div id="amr"  style="font-size: 20px; display: flex; margin-bottom: 10px; justify-content: center; align-items: center; color: black;">
   The site was created by <a href="https://www.facebook.com/amr.shalapy.927?mibextid=ZbWKwL"> amr </a> & <a href="https://www.facebook.com/tefa.salah.92798?mibextid=ZbWKwL"> mostafa </a>
 </div>
@@ -170,6 +169,26 @@
   }
 });
 </script>
+<script>
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+  
+      </script>
 <script src="cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
 <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>  
